@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Request Tracking System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Request Tracking System</h1>
+    <p class="subtitle">Raise a request and track its status</p>
+
+    <form id="requestForm" class="form">
+      <label>
+        Student Name
+        <input type="text" id="studentName" placeholder="Enter your name" />
+      </label>
+
+      <label>
+        Issue / Request
+        <input type="text" id="issue" placeholder="Describe your issue/request" />
+      </label>
+
+      <label>
+        Status
+        <select id="status">
+          <option value="">Select status</option>
+          <option value="Open">Open</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Closed">Closed</option>
+        </select>
+      </label>
+
+      <button type="submit">Add Request</button>
+
+      <p id="message" class="message"></p>
+    </form>
+
+    <div class="list-section">
+      <h2>Requests</h2>
+      <ul id="requestList" class="request-list"></ul>
+      <p id="emptyState" class="empty">No requests added yet.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
