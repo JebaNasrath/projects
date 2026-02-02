@@ -22,7 +22,7 @@ CREATE TABLE table_status (
     is_available NUMBER(1) DEFAULT 1 -- 0 for false (reserved), 1 for true (available)
 );
 
--- Optional: Initial data for menu (you can also add these via your app)
+
 INSERT INTO menu_items (item_name, price) VALUES ('rice', '30');
 INSERT INTO menu_items (item_name, price) VALUES ('roti', '20');
 INSERT INTO menu_items (item_name, price) VALUES ('chicken', '100');
@@ -31,10 +31,3 @@ INSERT INTO menu_items (item_name, price) VALUES ('desserts', '60');
 
 COMMIT;
 
--- Optional: Initial data for tables (your app's initializeTables will handle this too)
--- INSERT INTO table_status (table_number, is_available) VALUES (1, 1);
--- INSERT INTO table_status (table_number, is_available) VALUES (2, 1);
--- INSERT INTO table_status (table_number, is_available) VALUES (3, 1);
--- INSERT INTO table_status (table_number, is_available) VALUES (4, 1);
--- INSERT INTO table_status (table_number, is_available) VALUES (5, 1);
--- COMMIT;
